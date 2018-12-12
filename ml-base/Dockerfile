@@ -17,7 +17,7 @@ RUN conda update -y pip
 ENV PATH /opt/conda/bin:$PATH
 
 # install basic ML and DS tools
-RUN conda install --yes --name root python=3.6 tensorflow tensorboard numpy matplotlib pandas jupyter scipy
+RUN conda install --yes python=3.6 tensorflow pytorch tensorboard numpy matplotlib pandas jupyter scipy
 
 # For Tensorboard
 EXPOSE 6006
